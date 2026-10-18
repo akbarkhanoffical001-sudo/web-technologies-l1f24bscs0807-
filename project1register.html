@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Aroma | Register</title>
+    <link rel="stylesheet" href="project1register.css">
+</head>
+<body>
+
+    <header id="top">
+        <h1>Join Cafe Aroma</h1>
+        <p>Create your coffee lover account</p>
+
+        <nav>
+            <a href="project1home.html">Home</a>
+            <a href="project1media.html">Media &amp; Info</a>
+            <a href="project1register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-intro">
+            <h2>Registration Form</h2>
+            <p>Complete the form below to join our coffee community.</p>
+            <p>Fields marked with * are required.</p>
+        </section>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname"
+                       placeholder="Enter your full name"
+                       minlength="3" maxlength="50" required>
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" required>
+
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password"
+                       minlength="8" maxlength="20" required>
+
+                <label for="birthdate">Date of Birth</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+                <label for="website">Personal Website</label>
+                <input type="url" id="website" name="website"
+                       placeholder="https://example.com">
+
+                <label for="visits">Expected Monthly Visits</label>
+                <input type="number" id="visits" name="visits"
+                       min="1" max="30" value="4">
+
+                <label for="time">Preferred Visit Time</label>
+                <input type="time" id="time" name="time">
+
+                <label for="coffee-love">How much do you love coffee?</label>
+                <input type="range" id="coffee-love" name="coffee-love"
+                       min="1" max="10" value="5">
+
+                <label for="color">Favorite Coffee Color</label>
+                <input type="color" id="color" name="color" value="#795548">
+            </fieldset>
+
+            <fieldset>
+                <legend>Coffee Preferences</legend>
+
+                <label for="coffee">Favorite Drink *</label>
+                <select id="coffee" name="coffee" required>
+                    <option value="" selected disabled>Select a drink</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="latte">Cafe Latte</option>
+                    <option value="americano">Americano</option>
+                    <option value="mocha">Mocha</option>
+                </select>
+
+                <fieldset class="choices">
+                    <legend>Preferred Coffee Temperature</legend>
+
+                    <label class="choice">
+                        <input type="radio" name="temperature" value="hot" checked>
+                        Hot
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="temperature" value="cold">
+                        Cold
+                    </label>
+                </fieldset>
+
+                <fieldset class="choices">
+                    <legend>Additional Interests</legend>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interests" value="offers" checked>
+                        Receive special offers
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interests" value="events">
+                        Coffee events
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interests" value="new-drinks">
+                        New drink announcements
+                    </label>
+                </fieldset>
+
+                <label for="photo">Upload a Profile Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+
+                <label for="message">Tell Us About Your Coffee Preferences</label>
+                <textarea id="message" name="message"
+                          rows="5" maxlength="300"
+                          placeholder="Write your message here..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Status</legend>
+
+                <label for="member-id">Membership ID</label>
+                <input type="text" id="member-id" name="member-id"
+                       value="CA-2026" readonly>
+
+                <label for="account-type">Account Type</label>
+                <input type="text" id="account-type" name="account-type"
+                       value="Standard Member" disabled>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit">Register Now</button>
+                <button type="reset">Clear Form</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cafe Aroma. All rights reserved.</p>
+        <a href="#top">Back to Top</a>
+    </footer>
+
+</body>
+</html>
